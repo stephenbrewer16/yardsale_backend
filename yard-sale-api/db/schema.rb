@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2019_07_08_171938) do
     t.string "title"
     t.string "description"
     t.string "photo"
-    t.string "type"
+    t.string "category"
     t.string "condition"
     t.integer "price"
     t.integer "user_id"

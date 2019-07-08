@@ -4,7 +4,7 @@ class CreateItems < ActiveRecord::Migration[5.2]
       t.string :title
       t.string :description
       t.string :photo
-      t.string :type
+      t.string :category
       t.string :condition
       t.integer :price
       t.belongs_to :user, foreign_key: true
