@@ -1,10 +1,10 @@
 class User < ApplicationRecord
     has_many :items
     has_many :messages
+    validates :name, uniqueness: true
 
 
-    def geolocation
-        results = Geocoder.search(self.location)
-        results.first.coordinates
-    end
+    # def geolocation
+    #     [self.lat, self.long]
+    # end
 end

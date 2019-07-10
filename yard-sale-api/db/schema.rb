@@ -15,9 +15,8 @@ ActiveRecord::Schema.define(version: 2019_07_08_171938) do
   create_table "items", force: :cascade do |t|
     t.string "title"
     t.string "description"
-    t.string "photo"
     t.string "category"
-    t.string "condition"
+    t.string "photo"
     t.integer "price"
     t.integer "user_id"
     t.datetime "created_at", null: false
@@ -38,7 +37,8 @@ ActiveRecord::Schema.define(version: 2019_07_08_171938) do
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "location"
-    t.string "email"
+    t.float "lat"
+    t.float "long"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -7,9 +7,11 @@ class Api::V1::UsersController < ApplicationController
     end
 
     def create 
-        # results = Geocoder.search(params[:location])
-        @user = User.find_or_create_by(id: params[:id],name: params[:name],location: params[:location], email: params[:email])
-        # @user.update(long: results.first.coordinates[0], lat: results.first.coordinates[1])
+        @user = User.find_or_create_by(name: params[:name], location: params[:location])
+        if @user.lat == nil
+            results = Geocoder.search(params[:location])
+            @user.update(lat: results.first.coordinates[0], long: results.first.coordinates[1])
+        end
         render json: @user
     end
 end
