@@ -11,4 +11,10 @@ class Api::V1::ItemsController < ApplicationController
         render json: @item
     end
 
+    def items_by_category
+        items = Item.select {|item| item.category == params[:category]}
+
+        render json: items
+    end
+
 end
