@@ -12,8 +12,8 @@ u4 = User.create(name:"Matt", location:"15 Inwood Avenue Point Lookout NY 11569"
 u5 = User.create(name:"Charlie", location:"796 E 19th Street Brooklyn NY 11230", lat: 40.6312734, long: -73.9589550269883)
 u6 = User.create(name:"Kevin", location:"45 Rolling Brook Drive Edison NJ", lat: 40.5923936184211, long: -74.3688169473684)
 
-Item.create(title: "iPhone", description: "A phone", photo: "URL", category: "Phone", price: 500, user_id: u1.id)
-Item.create(title: "Couch", description: "To sit on", photo: "URL", category: "Furniture", price: 1000, user_id: u2.id)
+Item.create(title: "iPhone", description: "A phone", photo: "URL", category: "Electronics", price: 500, user_id: u1.id)
+Item.create(title: "Couch", description: "To sit on", photo: "URL", category: "Clothing", price: 1000, user_id: u2.id)
 Item.create(title: "TV", description: "Watch stuff", photo: "URL", category: "Electronics", price: 200, user_id: u3.id)
 Item.create(title: "The Sun Also Rises", description: "A book", photo: "URL", category: "Books", price: 10, user_id: u1.id)
 Item.create(title: "Raccoons", description: "An untrustworthy animal", photo: "URL", category: "Electronics", price: 50, user_id: u6.id)
