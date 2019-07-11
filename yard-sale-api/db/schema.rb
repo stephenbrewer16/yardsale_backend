@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 2019_07_08_171938) do
     t.string "title"
     t.string "description"
     t.string "category"
-    t.string "photo"
     t.integer "price"
     t.integer "user_id"
     t.datetime "created_at", null: false
